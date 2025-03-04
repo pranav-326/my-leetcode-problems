@@ -1,3 +1,4 @@
+package LeetCode;
 import java.util.*;
 public class mapground {
     public static void main(String[] args) {

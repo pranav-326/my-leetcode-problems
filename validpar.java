@@ -1,3 +1,5 @@
+package LeetCode;
+
 import java.util.*;
 
 public class validpar {
@@ -34,7 +36,7 @@ public class validpar {
         // If the stack is empty, the string is valid
         return stack.isEmpty();
     }
-}
+
 
 /*        String st = s.replaceAll("\\s", ""); 
 
