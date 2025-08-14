@@ -1,4 +1,3 @@
-package LeetCode;
 
 public class jewelsStones {
     public int numJewelsInStones(String jewels, String stones) {

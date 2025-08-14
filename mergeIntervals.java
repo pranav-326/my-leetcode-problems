@@ -1,4 +1,3 @@
-package LeetCode;
 import java.util.*;
 public class mergeIntervals {
     public static int[][] merge(int[][] intervals) {

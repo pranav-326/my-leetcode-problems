@@ -1,4 +1,3 @@
-package LeetCode;
 
 public class isPalin {
     public static boolean isPalindrome(String s) {

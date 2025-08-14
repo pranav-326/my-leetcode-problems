@@ -1,4 +1,3 @@
-package LeetCode;
 public class strScore {
     public static int scoreOfString(String s) {
         int score=0;

@@ -1,6 +1,4 @@
-package LeetCode;
-
-public class bestTimeStock {
+public class bestTimeStock { 
     public static int maxProfit(int[] prices) {
         int maxProfit=0;
         float minPrice=Float.POSITIVE_INFINITY;

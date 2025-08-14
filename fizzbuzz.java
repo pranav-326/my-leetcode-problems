@@ -1,7 +1,4 @@
-package LeetCode;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class fizzbuzz {
     public List<String> fizzBuzz(int n) {

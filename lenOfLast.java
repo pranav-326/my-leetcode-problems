@@ -1,4 +1,3 @@
-package LeetCode;
 // import java.util.*;
 public class lenOfLast {
     public static int lengthOfLastWord(String s) {

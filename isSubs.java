@@ -1,4 +1,3 @@
-package LeetCode;
 
 public class isSubs {
     public static boolean isSubsequence(String s, String t) {

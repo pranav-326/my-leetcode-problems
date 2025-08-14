@@ -1,4 +1,3 @@
-package LeetCode;
 
 // String word="";
 //         int a=0,b=0;
