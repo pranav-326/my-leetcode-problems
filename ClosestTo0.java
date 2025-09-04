@@ -1,5 +1,3 @@
-package LeetCode;
-
 public class ClosestTo0 {
     public int findClosestNumber(int[] nums) {
         int closest=nums[0];
