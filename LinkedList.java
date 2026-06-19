@@ -86,9 +86,77 @@ public class LinkedList {
         }
         return false;
     }
-
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head=null;
+        ListNode curr=null;
+        int a=0,b=0;
+        while (l1!=null) {
+            a=a*10+l1.val;
+            l1=l1.next;
+        }
+        while (l2!=null) {
+            b=b*10+l2.val;
+            l2=l2.next;
+        }
+        int c=a+b;
+        if (c==0) {
+            return new ListNode(0);
+        }
+        while (c!=0) {
+            int digit=c%10;
+            ListNode newN = new ListNode(digit);
+            if (head==null) {
+                head=newN;
+                curr=head;
+            } else {
+                curr.next=newN;
+                curr=curr.next;
+            }
+            System.out.println(digit);
+            c/=10;
+        }
+        return head;
+    }
+    public static String to_String(ListNode head) {
+        StringBuilder sb = new StringBuilder();
+        ListNode current = head;
+        while (current != null) {
+            sb.append(current.val);
+            if (current.next != null) {
+            sb.append(" -> ");
+            }
+            current = current.next;
+        }
+        return sb.toString();
+    }
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
+        int len=0;
+        ListNode temp=head;
+        while(temp!=null) {
+            len++;
+            temp=temp.next;
+        }
+        if (len==1) {
+            return null;
+        }
+        if (len==2&&n==2) {
+            head=head.next;
+            return head;
+        }
+        temp=head;
+        for (int i = 0; i < len-n-1; i++) {
+            temp=temp.next;
+        }
+        temp.next=temp.next.next;
+        temp=head;
+        while(temp!=null) {
+            System.out.print(temp.val+"->");
+            temp=temp.next;
+        }
+        return temp;
+    }
     public static void main(String[] args) {
-        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, null))));
-        System.out.println(deleteDuplicates(head));
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
+        System.out.println(removeNthFromEnd(head,2));
     }
 }
