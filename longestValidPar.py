@@ -12,4 +12,3 @@ class Solution(object):
                 else:
                     maxLen=max(maxLen, i-stack[-1])
         return maxLen
-        
